@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Rentiq/Registro</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+</head>
+<body>
+    <header class="header__flex">
+        <img src="../imgs/Rentiq logo.jpeg" alt="Rentiq logo" width="200px" class="Rentiq__logo--flex">
+        <nav>
+            <ul class="lista__navegacion--flex">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Categorias.html">Categorías</a></li>
+                <li><a href="Nosotros.html">Sobre nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Registro.html">Iniciar sesión/Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+        <fieldset class="Form-inicio">
+            <legend>¿Ya tienes cuenta?</legend>
+            <form>
+                <label for="Inicia sesión">Inicia sesión:</label>
+                <input type="button" value="Google">
+                <input type="button" value="Apple ID">
+                <input type="button" value="Facebook">
+            </form>
+        </fieldset>
+        </div>
+        <br><br>
+        <div>
+        <fieldset class="Form-registro">
+            <legend>¿Eres nuevo?</legend>
+            <form>
+                <!--Radio es para limitar a 1 sola opcion-->
+                <!--Checkbox es para permitir múltiples opciones-->
+                <!--El "for" del label, debe ser igual que el "id" del input-->
+                <p>Sexo</p>
+                <input type="radio" name="Sexo" id="Femenino">Femenino
+                <input type="radio" name="Sexo" id="Masculino">Masculino<br>
+                <label for="Nombres">Nombres</label>
+                <input type="text" id="Nombres" name="Nombres" placeholder="Nombres" autocomplete="on" required><br>
+                <label for="Apellido P">Apellido paterno</label>
+                <input type="text" id="Apellido P" name="Apellido paterno" placeholder="Apellido paterno" autocomplete="on" required><br>
+                <label for="Aepllido M">Apellido materno</label>
+                <input type="text" id="Apellido M" name="Apellido materno" placeholder="Apellido materno" autocomplete="on" required><br>
+                <label for="Fecha Nac">Fecha de nacimiento</label>
+                <input type="date" name="Fecha de nacimiento" id="Fecha Nac" autocomplete="on" required><br>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="Correo electrónico" placeholder="Correo electrónico" autocomplete="on" required><br>
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar todo">
+            </form>
+        </fieldset>
+        </div>
+    </section>
+    <footer>
+        <h4>Copyright © 2022 Todos los derechos reservados o hay tabla</h4>
+    </footer>
+</body>
+</html>

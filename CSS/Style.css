@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio de estilo index */
+header {
+    background-color: +rgb(36, 75, 100);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+header img {
+    width: 145px;
+    height: 145px;
+    
+}
+.header__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 113, 184);
+}
+header ul li {
+    list-style: none;
+    display: inline;
+    font-family: 'Rubik', monospace;
+    padding: 15px 15px 15px 15px;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+a:hover {
+    background-color: aquamarine;
+    color: white;
+    padding: 10px;
+}
+.lista__navegacion--flex {
+    display: flex;
+    gap: 1.5rem;
+}
+/* Fin de estilo index */
+/*Inicio banner*/
+.divs__banner {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: darkcyan;
+}
+
+/*Fin de banner*/
+/*Inicio Footer fijo*/
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 25px;
+}
+.contenido__inicio {
+    flex-grow: 1;
+}
+/*Fin footer fijo*/
+
+
+/* Inicio estilo de Registro */
+.Form-inicio {
+    background-color: rgb(49, 100, 134);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Form-registro {
+    background-color: yellow;
+    width: 300px;
+    padding: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    border-color: forestgreen;
+}
