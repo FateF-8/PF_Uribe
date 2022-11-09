@@ -82,6 +82,11 @@ a:hover {
 
 /*Fin de banner*/
 /*Inicio Seccion Top 6*/
+.clasif h2 {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    
+}
 .clasif .conten_cards{ 
     display: flex;
     justify-content: space-evenly;
