@@ -15,7 +15,6 @@ header {
 header img {
     width: 145px;
     height: 145px;
-    
 }
 .header__flex {
     display: flex;
