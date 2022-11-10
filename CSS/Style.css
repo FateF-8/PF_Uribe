@@ -130,6 +130,14 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+.clasif .conten_cards p .nombre_cardtop {
+    display: flex;
+    flex-direction: column;
+}
+.clasif .conten_cards p .descripcion_cardtop {
+    display: flex;
+    flex-direction: column;
+}
 
 /*Fin Seccion Top 6*/
 /*Inicio Footer fijo*/
