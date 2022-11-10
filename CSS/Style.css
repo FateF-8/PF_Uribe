@@ -85,24 +85,36 @@ a:hover {
 .clasif h2 {
     padding-left: 15px;
     padding-bottom: 10px;
-    
+    font-family: "Rubik", sans-serif;
 }
 .clasif .conten_cards{ 
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 50px;
 }
 
 .clasif .conten_cards div {
-    width: 250px;
-    height: 300px;
+    width: 700px;
+    height: 100px;
     border: 1px solid black;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: #5CC8F2;
+}
+.clasif .conten_cards img {
+    display: flex;
+    flex-direction: row;
 }
 .clasif .conten_cards div h3 {
     margin-bottom: 15px;
     font-size: 20px;
     font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 .clasif .conten_cards div a {
     text-decoration: none;
@@ -111,6 +123,12 @@ a:hover {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.clasif .conten_cards p {
+    display: flex;
+    flex-direction: column;
 }
 
 /*Fin Seccion Top 6*/
