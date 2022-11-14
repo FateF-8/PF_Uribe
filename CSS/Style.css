@@ -10,7 +10,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 100px auto 150px 400px 200px auto;
+    grid-template-rows: 250px 100px auto 150px 400px 400px auto;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .conten_topcar {
-    background-color: aqua;
+    background-color: #38abf2;
     grid-area: card;
     width: 48%;
     height: 600px;
@@ -114,7 +114,7 @@ a:hover {
     width: 95%;
     height: 150px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -137,4 +137,22 @@ a:hover {
     width: 23%;
     display: flex;
     justify-content: center;
+    margin: 15px;
+}
+
+.nombre_cardtop {
+    display: flex;
+    flex-direction: column;
+}
+.descripcion_cardtop {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_concards {
+    grid-area: textop;
+    background-color: #dfe8f1;
+    width: 40%;
+    height: 300px;
+    margin-left: 6px;
 }
