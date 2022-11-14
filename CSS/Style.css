@@ -5,29 +5,44 @@
 }
 
 /* Inicio de estilo index */
-header {
-    background-color: +rgb(36, 75, 100);
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    display: inline-block;
+.grid-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 100px auto 150px 400px 200px auto;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "imbanner imbanner txbanner"
+    "top top top"
+    "card card textop"
+    "card card textop"
+    "footer footer footer";
 }
-header img {
-    width: 145px;
-    height: 145px;
-}
-.header__flex {
+/*Header y nav inicio*/
+.header {
+    grid-area: header;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(38, 113, 184);
+    background-color: #0b6bbf;
 }
-header ul li {
+header img {
+    width: 180px;
+    height: 180px;
+}
+
+.menu {
+    grid-area: nav;
+}
+.menu ul li {
     list-style: none;
     display: inline;
     font-family: 'Rubik', monospace;
     padding: 15px 15px 15px 15px;
 }
+
 a {
     text-decoration: none;
     font-size: 20px;
@@ -38,17 +53,13 @@ a {
     font-family: "Rubik", sans-serif ;
 }
 a:hover {
-    background-color: aquamarine;
+    background-color: #5cc8f2;
     color: white;
     padding: 10px;
 }
-.lista__navegacion--flex {
-    display: flex;
-    gap: 1.5rem;
-}
-/* Fin de estilo index */
-/*Inicio banner*/
-.Banner {
+/*Header y nav final*/
+/*Banner inicio*/
+.divs__banner {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -57,125 +68,73 @@ a:hover {
     width: 100%;
     height: 100%;
     gap: .5rem;
-    background-color: darkcyan;
-}
-
-.divs__banner {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    gap: 200px;
+    background-color: #38abf2;
 }
 
 .img_banner {
+    grid-area: imbanner;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
     padding: 15px;
     border: 10px;
 }
 
 .texto_banner {
+    grid-area: txbanner;
     border: 3px solid black;
     height: 300px;
     width: 500px;
 }
-
-/*Fin de banner*/
-/*Inicio Seccion Top 6*/
-.clasif h2 {
+/*Banner final*/
+/*Clasificaciones top 6*/
+.top_title {
+    grid-area: top;
     padding-left: 15px;
     padding-bottom: 10px;
     font-family: "Rubik", sans-serif;
 }
-.clasif .conten_cards{ 
+
+.conten_topcar {
+    background-color: aqua;
+    grid-area: card;
+    width: 48%;
+    height: 600px;
+    margin: 0 10px 20px 10px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: left;
     flex-direction: column;
-    padding-left: 50px;
+    justify-content: space-around;
+    align-items: center;    
 }
 
-.clasif .conten_cards div {
-    width: 700px;
-    height: 100px;
-    border: 1px solid black;
-    text-align: center;
+.cardtop {
+    background-color: #dfe8f1;
+    border: solid 1px silver;
+    border-radius: 13px;
+    width: 95%;
+    height: 150px;
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    background-color: #5CC8F2;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
 }
-.clasif .conten_cards img {
-    display: flex;
-    flex-direction: row;
+.cardtop img {
+    width: 35%;
+    height: 75%;
+    padding-left: 20px;
 }
-.clasif .conten_cards div h3 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: "Rubik", sans-serif;
-    display: flex;
-    flex-direction: column;
+.cardtop h3 {
+    font-family: "Rubik";
 }
-.clasif .conten_cards div a {
-    text-decoration: none;
-    color: black;
-    background-color: #DFE8F1;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-}
-.clasif .conten_cards p {
-    display: flex;
-    flex-direction: column;
-}
-.clasif .conten_cards p .nombre_cardtop {
-    display: flex;
-    flex-direction: column;
-}
-.clasif .conten_cards p .descripcion_cardtop {
-    display: flex;
-    flex-direction: column;
-}
-
-/*Fin Seccion Top 6*/
-/*Inicio Footer fijo*/
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-footer {
-    background-color: black;
+.cardtop a {
+    background-color: steelblue;
     color: white;
-    height: 25px;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px ;
+    border-radius: 5px;
 }
-.contenido__inicio {
-    flex-grow: 1;
-}
-/*Fin footer fijo*/
-
-
-/* Inicio estilo de Registro */
-.Form-inicio {
-    background-color: rgb(49, 100, 134);
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.Form-registro {
-    background-color: yellow;
-    width: 300px;
-    padding: 20px;
-    margin-left: 60px;
-    border-radius: 10px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px;
-    border-radius: 10px;
-    border-color: forestgreen;
+.cardtop span {
+    width: 23%;
+    display: flex;
+    justify-content: center;
 }

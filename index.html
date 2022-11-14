@@ -12,69 +12,71 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header__flex">
-        <img src="../Proyecto final/imgs/Rentiq logo.jpeg" alt="Rentiq-logo" class="Rentiq__logo--flex">
-        <nav>
-            <ul class="lista__navegacion--flex">
-                <li><a href="">Inicio</a></li>
-                <li><a href="pages/Categorias.html">Categorías</a></li>
-                <li><a href="pages/Nosotros.html">Sobre nosotros</a></li>
-                <li><a href="pages/Contacto.html">Contacto</a></li>
-                <li><a href="pages/Registro.html">Iniciar sesión/Registrarse</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="Banner">
-        <div class="divs__banner">
-            <div class="img_banner">
-                <img src="../Proyecto final/imgs/Sofa.jpg" alt="sala" max-width="100%" width="500px" height="300px">
+    <div class="grid container">
+        <header class="header">
+            <img src="../Proyecto final/imgs/Rentiq logo.jpeg" alt="Rentiq-logo" class="Rentiq__logo--flex">
+            <nav class="menu">
+                <ul class="lista__navegacion--flex">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="pages/Categorias.html">Categorías</a></li>
+                    <li><a href="pages/Nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="pages/Contacto.html">Contacto</a></li>
+                    <li><a href="pages/Registro.html">Iniciar sesión/Registrarse</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="Banner">
+            <div class="divs__banner">
+                <div class="img_banner">
+                    <img src="../Proyecto final/imgs/Sofa.jpg" alt="sala" max-width="100%" width="500px" height="300px">
+                </div>
+                <div class="texto_banner">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vel ut incidunt, impedit, nulla ipsa aut aliquid perferendis ducimus soluta, reiciendis minima. Aperiam maiores numquam totam excepturi dolorum, repellendus itaque!</p>
+                </div>
             </div>
-            <div class="texto_banner">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vel ut incidunt, impedit, nulla ipsa aut aliquid perferendis ducimus soluta, reiciendis minima. Aperiam maiores numquam totam excepturi dolorum, repellendus itaque!</p>
-            </div>
-        </div>
-    </section>
-    <section class="clasif">
-        <h2>Top 6 en tu zona</h2>
-        <div class="conten_cards">
-            <div>
-                <img src="../Proyecto final/imgs/Switch OLED.jpg" height="100px" width="150px" alt="Nintendo Switch OLED">
-                <h3>Producto 1</h3>
-                <a href="">Ver</a>
-                <p class="nombre_cardtop">Evaristo</p>
-                <p class="descripcion_cardtop">Nintendo Switch con accesorios</p>
-            </div>
-            <div>
-                <img src="../Proyecto final/imgs/Taladro percutor.jpg" height="100px" width="150px" alt="Taladro percutor">
-                <h3>Producto 2</h3>
-                <a href="">Ver</a>
-                <p class="nombre_cardtop">Eustacio</p>
-                <p class="descripcion_cardtop">Taladro percutor</p>
-            </div>
-            <div>
-                <img src="../Proyecto final/imgs/Batidora Oster.jpg" height="100px" width="150px" alt="Batidora de pedestal">
-                <h3>Producto 3</h3>
-                <a href="">Ver</a>
-                <p class="nombre_cardtop">Pancracio</p>
-                <p class="descripcion_cardtop">Batirdora de pedestal</p>
-            </div>
-        </div>
-        <div class="texto_concards">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a commodi velit tempora nulla corporis adipisci aliquam quos voluptatibus, nemo ducimus fugiat amet consequuntur ullam reiciendis dolore totam earum nobis.</p>
-        </div>
-    </section>
-    <section class="wrapper">
-        <div class="contenido__inicio">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A odio doloremque in voluptatum. Perspiciatis minima provident enim illo aliquid? Numquam incidunt enim possimus deleniti reprehenderit! Ad nam quidem repudiandae sit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate, asperiores quidem doloremque cumque non sint reiciendis rem et perferendis velit consectetur repellendus voluptates veritatis. Sit itaque deleniti dolores officiis!</p>
-        </div>
-        <section class="Banner_footer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZEgLWrMJd2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="150px" height="200px"></iframe>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias necessitatibus eos, neque ducimus sed consectetur doloribus facere veniam, consequatur cupiditate iusto minus quam eaque expedita in? Corporis, pariatur nesciunt! Error!</p>
         </section>
-    <footer>
-        <h4>Copyright © 2022 Todos los derechos reservados o hay tabla</h4>
-    </footer>
-    </section>
+        <section class="clasif">
+            <h2 class="top_title">Top 6 en tu zona</h2>
+            <div class="conten_topcar">
+                <div class="cardtop">
+                    <img src="../Proyecto final/imgs/Switch OLED.jpg" height="100px" width="150px" alt="Nintendo Switch OLED">
+                    <h3>Producto 1</h3>
+                    <span><a href="">Ver</a></span>
+                    <p class="nombre_cardtop">Evaristo</p>
+                    <p class="descripcion_cardtop">Nintendo Switch con accesorios</p>
+                </div>
+                <div class="cardtop">
+                    <img src="../Proyecto final/imgs/Taladro percutor.jpg" height="100px" width="150px" alt="Taladro percutor">
+                    <h3>Producto 2</h3>
+                    <span><a href="">Ver</a></span>
+                    <p class="nombre_cardtop">Eustacio</p>
+                    <p class="descripcion_cardtop">Taladro percutor</p>
+                </div>
+                <div class="cardtop">
+                    <img src="../Proyecto final/imgs/Batidora Oster.jpg" height="100px" width="150px" alt="Batidora de pedestal">
+                    <h3>Producto 3</h3>
+                    <span><a href="">Ver</a></span>
+                    <p class="nombre_cardtop">Pancracio</p>
+                    <p class="descripcion_cardtop">Batirdora de pedestal</p>
+                </div>
+            </div>
+            <div class="texto_concards">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a commodi velit tempora nulla corporis adipisci aliquam quos voluptatibus, nemo ducimus fugiat amet consequuntur ullam reiciendis dolore totam earum nobis.</p>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="contenido__inicio">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A odio doloremque in voluptatum. Perspiciatis minima provident enim illo aliquid? Numquam incidunt enim possimus deleniti reprehenderit! Ad nam quidem repudiandae sit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate, asperiores quidem doloremque cumque non sint reiciendis rem et perferendis velit consectetur repellendus voluptates veritatis. Sit itaque deleniti dolores officiis!</p>
+            </div>
+            <section class="Banner_footer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZEgLWrMJd2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="150px" height="200px"></iframe>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias necessitatibus eos, neque ducimus sed consectetur doloribus facere veniam, consequatur cupiditate iusto minus quam eaque expedita in? Corporis, pariatur nesciunt! Error!</p>
+            </section>
+        <footer>
+            <h4>Copyright © 2022 Todos los derechos reservados o hay tabla</h4>
+        </footer>
+        </section>
+    </div>
 </body>
 </html>
