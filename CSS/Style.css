@@ -162,11 +162,13 @@ a:hover {
 .texto_concards {
     grid-area: textcards;
     background-color: #dfe8f1;
-    width: 95%;
+    width: 98%;
     height: 600px;
-    margin-left: 6px;
+    padding: 10px;
     font-family: "Roboto";
     font-size: 20px;
+    border: solid 1px silver;
+    border-radius: 13px;
 }
 /*Fin Clasif. top 6*/
 /*Inicio footer*/
