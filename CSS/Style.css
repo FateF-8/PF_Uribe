@@ -6,19 +6,16 @@
 
 /* Inicio de estilo index */
 .grid-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 100px auto 150px 400px 400px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px auto 1000px auto;
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "imbanner imbanner txbanner"
-    "top top top"
-    "card card textop"
-    "card card textop"
-    "footer footer footer";
+    "header header header header"
+    "banner banner banner banner"
+    "clasif clasif clasif clasif"
+    "footer footer footer footer";
 }
 /*Header y nav inicio*/
 .header {
@@ -59,8 +56,9 @@ a:hover {
 }
 /*Header y nav final*/
 /*Banner inicio*/
-.divs__banner {
-    display: inline-flex;
+.Banner {
+    grid-area: banner;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -72,7 +70,6 @@ a:hover {
 }
 
 .img_banner {
-    grid-area: imbanner;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -81,13 +78,16 @@ a:hover {
 }
 
 .texto_banner {
-    grid-area: txbanner;
     border: 3px solid black;
     height: 300px;
     width: 500px;
 }
 /*Banner final*/
 /*Clasificaciones top 6*/
+.clasif {
+    grid-area: clasif;
+}
+
 .top_title {
     grid-area: top;
     padding-left: 15px;
@@ -97,7 +97,6 @@ a:hover {
 
 .conten_topcar {
     background-color: #38abf2;
-    grid-area: card;
     width: 48%;
     height: 600px;
     margin: 0 10px 20px 10px;
@@ -154,7 +153,6 @@ a:hover {
 }
 
 .texto_concards {
-    grid-area: textop;
     background-color: #dfe8f1;
     width: 40%;
     height: 300px;
