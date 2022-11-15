@@ -143,10 +143,14 @@ a:hover {
 .nombre_cardtop {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 .descripcion_cardtop {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 .texto_concards {
@@ -155,4 +159,34 @@ a:hover {
     width: 40%;
     height: 300px;
     margin-left: 6px;
+    font-family: "Roboto";
+}
+/*Fin Clasif. top 6*/
+/*Inicio footer*/
+.wrapper {
+    background-color: #dfe8f1;
+    grid-area: footer;
+    margin: 0 10px 0 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenido__inicio {
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    font-family: "Roboto";
+}
+
+.Banner_footer {
+    justify-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #0b6bbf;
+    color: white;
+    height: 25px;
 }
