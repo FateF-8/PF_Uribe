@@ -137,6 +137,12 @@ a:hover {
     justify-content: space-around;
     align-items: center;    
 }
+@media screen and (max-width: 767px) {
+    .conten_topcar {
+        flex-direction: column;
+        width: auto;
+    }
+}
 
 .cardtop {
     background-color: white;
@@ -149,11 +155,19 @@ a:hover {
     justify-content: space-around;
     align-items: center;
 }
+@media screen and (max-width: 767px) {
+    .cardtop {
+        flex-direction: column;
+        width: auto;
+    }
+}
 .cardtop img {
     width: 35%;
     height: 75%;
     padding-left: 20px;
+    max-width: 100%;
 }
+
 .cardtop h3 {
     font-family: "Rubik";
 }
