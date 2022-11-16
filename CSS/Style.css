@@ -17,6 +17,10 @@
     "clasif clasif clasif clasif"
     "footer footer footer footer";
 }
+img {
+    max-width: 100%;
+}
+
 /*Header y nav inicio*/
 .header {
     grid-area: header;
@@ -25,6 +29,13 @@
     align-items: center;
     background-color: #0b6bbf;
 }
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
 header img {
     width: 180px;
     height: 180px;
@@ -38,6 +49,13 @@ header img {
     display: inline;
     font-family: 'Rubik', monospace;
     padding: 15px 15px 15px 15px;
+}
+
+@media screen and (max-width: 399px) {
+    .menu {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
 
 a {
@@ -75,6 +93,13 @@ a:hover {
     flex-flow: row wrap;
     padding: 15px;
     border: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .img_banner {
+        flex-direction: column;
+        width: auto;
+    }
 }
 
 .texto_banner {
@@ -172,7 +197,10 @@ a:hover {
 }
 /*Fin Clasif. top 6*/
 /*Inicio pagina Categorias*/
-
+.opciones {
+    background: linear-gradient(45deg, #131086, #b621f3);
+    
+}
 
 
 /*Fin pagina categorias*/
