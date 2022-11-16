@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8c7efe9158.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -26,45 +27,46 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div>
-        <fieldset class="Form-inicio">
-            <legend>¿Ya tienes cuenta?</legend>
-            <form>
-                <label for="Inicia sesión">Inicia sesión:</label>
-                <input type="button" value="Google">
-                <input type="button" value="Apple ID">
-                <input type="button" value="Facebook">
+    <section class="Login_container">
+        <div class="login_left"></div>
+            <div class="titulo_login">
+                <h1>Bienvenido a Rentiq</h1>
+                <p>Al iniciar sesion, podra interactuar con todas las funciones de la plataforma</p>
+            </div>
+            <form class="formulario">
+                <div class="contenido_login">
+                    <div class="form_item">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Correo electrónico">
+                    </div>
+                    <div class="form_item">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="form_item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="Recordarme">
+                            <label for="Recordarme" id="Recordarmecheck">Recordarme</label>
+                        </div>
+                    </div>
+                    <button type="submit">Iniciar sesión</button>
+                </div>
+                <div class="login_btn">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-apple"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </div>
             </form>
-        </fieldset>
-        </div>
-        <br><br>
-        <div>
-        <fieldset class="Form-registro">
-            <legend>¿Eres nuevo?</legend>
-            <form>
-                <!--Radio es para limitar a 1 sola opcion-->
-                <!--Checkbox es para permitir múltiples opciones-->
-                <!--El "for" del label, debe ser igual que el "id" del input-->
-                <p>Sexo</p>
-                <input type="radio" name="Sexo" id="Femenino">Femenino
-                <input type="radio" name="Sexo" id="Masculino">Masculino<br>
-                <label for="Nombres">Nombres</label>
-                <input type="text" id="Nombres" name="Nombres" placeholder="Nombres" autocomplete="on" required><br>
-                <label for="Apellido P">Apellido paterno</label>
-                <input type="text" id="Apellido P" name="Apellido paterno" placeholder="Apellido paterno" autocomplete="on" required><br>
-                <label for="Aepllido M">Apellido materno</label>
-                <input type="text" id="Apellido M" name="Apellido materno" placeholder="Apellido materno" autocomplete="on" required><br>
-                <label for="Fecha Nac">Fecha de nacimiento</label>
-                <input type="date" name="Fecha de nacimiento" id="Fecha Nac" autocomplete="on" required><br>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="Correo electrónico" placeholder="Correo electrónico" autocomplete="on" required><br>
-                <input type="submit" value="Registrar">
-                <input type="reset" value="Limpiar todo">
-            </form>
-        </fieldset>
-        </div>
     </section>
+    <div class="img_login">
+        <img src="../imgs/login.jpg" alt="login iconos">
+    </div>
     <footer>
         <h4>Copyright © 2022 Todos los derechos reservados o hay tabla</h4>
     </footer>
