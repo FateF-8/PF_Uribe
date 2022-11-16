@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8c7efe9158.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="Registro_body">
     <header class="header">
         <img src="../imgs/Rentiq logo.jpeg" alt="Rentiq-logo" class="Rentiq__logo--flex">
         <nav class="menu">
@@ -27,13 +27,13 @@
             </ul>
         </nav>
     </header>
-    <section class="Login_container">
-        <div class="login_left"></div>
+    <section class="login_container">
+        <div class="login_usu">
             <div class="titulo_login">
                 <h1>Bienvenido a Rentiq</h1>
                 <p>Al iniciar sesion, podra interactuar con todas las funciones de la plataforma</p>
             </div>
-            <form class="formulario">
+            <form class="formulario_login">
                 <div class="contenido_login">
                     <div class="form_item">
                         <label for="email">Email</label>
@@ -46,10 +46,10 @@
                     <div class="form_item">
                         <div class="checkbox">
                             <input type="checkbox" id="Recordarme">
-                            <label for="Recordarme" id="Recordarmecheck">Recordarme</label>
+                            <label for="Recordarme" class="Recordarmecheck">Recordarme</label>
                         </div>
                     </div>
-                    <button type="submit">Iniciar sesión</button>
+                    <button type="submit" class="inic_ses">Iniciar sesión</button>
                 </div>
                 <div class="login_btn">
                     <a href="#">
@@ -63,6 +63,48 @@
                     </a>
                 </div>
             </form>
+        </div>
+    </section>
+    <section class="regis_container">
+        <div class="registro_new">
+            <div class="titulo_registro">
+                <h1>¿Eres nuevo usuario?</h1>
+                <p>Llenando el siguiente formulario, podras crear tu cuenta en Rentiq y comenzar a hacer uso de las funciones de la plataforma de la comunidad</p>
+            </div>
+            <form class="formulario_regis">
+                <div class="contenido_regis">
+                    <div class="form_item2">
+                        <p>Sexo</p>
+                        <input type="radio" name="Sexo" id="Femenino">Femenino
+                        <input type="radio" name="Sexo" id="Masculino">Masculino<br>
+                    </div>
+                    <div class="form_item2">
+                        <label for="Nombres">Nombres</label>
+                        <input type="text" id="Nombres" name="Nombres" placeholder="Nombres" autocomplete="on" required><br>
+                    </div>
+                    <div class="form_item2">
+                        <label for="Apellido P">Apellido paterno</label>
+                        <input type="text" id="Apellido P" name="Apellido paterno" placeholder="Apellido paterno" autocomplete="on" required><br>
+                    </div>
+                    <div class="form_item2">
+                        <label for="Aepllido M">Apellido materno</label>
+                        <input type="text" id="Apellido M" name="Apellido materno" placeholder="Apellido materno" autocomplete="on" required><br>
+                    </div>
+                    <div class="form_item2">
+                        <label for="Fecha Nac">Fecha de nacimiento</label>
+                        <input type="date" name="Fecha de nacimiento" id="Fecha Nac" autocomplete="on" required><br>
+                    </div>
+                    <div class="form_item2">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="Correo electrónico" placeholder="Correo electrónico" autocomplete="on" required><br>
+                    </div>
+                    <div class="regis_btn">
+                        <input type="submit" value="Registrar">
+                        <input type="reset" value="Limpiar todo">
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
     <div class="img_login">
         <img src="../imgs/login.jpg" alt="login iconos">
