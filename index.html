@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentiq</title>
-    <link rel="stylesheet" href="CSS/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
 </head>
 <body>
     <div class="grid-container">
@@ -36,21 +37,21 @@
         <section class="clasif">
             <h2 class="top_title">Top 6 en tu zona</h2>
             <div class="conten_topcar">
-                <div class="cardtop">
+                <div class="cardtop wow animate__animated animate__bounceInLeft">
                     <img src="../Proyecto final/imgs/Switch OLED.jpg" height="100px" width="150px" alt="Nintendo Switch OLED">
                     <h3>Producto 1</h3>
                     <span><a href="">Ver</a></span>
                     <p class="nombre_cardtop">Evaristo</p>
                     <p class="descripcion_cardtop">Nintendo Switch con accesorios</p>
                 </div>
-                <div class="cardtop">
+                <div class="cardtop wow animate__animated animate__bounceInLeft">
                     <img src="../Proyecto final/imgs/Taladro percutor.jpg" height="100px" width="150px" alt="Taladro percutor">
                     <h3>Producto 2</h3>
                     <span><a href="">Ver</a></span>
                     <p class="nombre_cardtop">Eustacio</p>
                     <p class="descripcion_cardtop">Taladro percutor</p>
                 </div>
-                <div class="cardtop">
+                <div class="cardtop wow animate__animated animate__bounceInLeft">
                     <img src="../Proyecto final/imgs/Batidora Oster.jpg" height="100px" width="150px" alt="Batidora de pedestal">
                     <h3>Producto 3</h3>
                     <span><a href="">Ver</a></span>
@@ -77,5 +78,10 @@
             </footer>
             </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
 </body>
 </html>
