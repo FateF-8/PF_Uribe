@@ -1,21 +1,6 @@
+@import "reset";
 @import "home";
 @import "categorias";
 @import "Registro";
 @import "footer";
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/*Inicio pagina Categorias*/
-
-
-/*Fin pagina categorias*/
-/*Inicio pagina Registro*/
-
-/*Fin pagina Registro*/
-/*Inicio footer*/
+@import "variables";
