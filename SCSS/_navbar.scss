@@ -2,7 +2,6 @@ img {
     max-width: 100%;
 }
 
-/*Header y nav inicio*/
 .header {
     grid-area: header;
     display: flex;
@@ -18,13 +17,10 @@ img {
     @media screen and (max-width: 767px) {
         flex-direction: column;
     }
-}
 
-
-
-.menu {
+    .menu {
     grid-area: nav;
-
+        
     li {
         list-style: none;
         display: inline;
@@ -49,10 +45,10 @@ img {
     }
 }
 
-@media screen and (max-width: 399px) {
-    .menu {
-        flex-direction: row;
-        align-items: flex-end;
+    @media screen and (max-width: 399px) {
+        .menu {
+            flex-direction: row;
+            align-items: flex-end;
+        }
     }
 }
-

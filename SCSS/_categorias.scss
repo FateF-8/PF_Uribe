@@ -1,6 +1,24 @@
 @use "navbar";
+@use "variables";
 
-opciones {
+.opciones {
     background: linear-gradient(45deg, #131086, #b621f3);
-    
+}
+
+.categ_titl {
+    flex-direction: left;
+    font-family: $titulos;
+}
+
+.conten_categorias {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas: 
+    "header header header"
+    "card card card"
+    "card card card"
+    "footer footer footer";
 }
