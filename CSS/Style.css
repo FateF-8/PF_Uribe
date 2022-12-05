@@ -1,14 +1,18 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Variables para fuentes */
+/* Media queries */
+/* Variables para categorias */
 img {
   max-width: 100%;
 }
 
-/*Header y nav inicio*/
 .header {
   grid-area: header;
   display: flex;
@@ -27,18 +31,18 @@ img {
     flex-direction: column;
   }
 }
-.menu {
+.header .menu {
   grid-area: nav;
 }
 
-.menu li {
+.header .menu li {
   list-style: none;
   display: inline;
   font-family: "Rubik", monospace;
   padding: 15px 15px 15px 15px;
 }
 
-.menu a {
+.header .menu a {
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -48,14 +52,14 @@ img {
   font-family: "Rubik", sans-serif;
 }
 
-.menu a:hover {
+.header .menu a:hover {
   background-color: #5cc8f2;
   color: white;
   padding: 10px;
 }
 
 @media screen and (max-width: 399px) {
-  .menu {
+  .header .menu {
     flex-direction: row;
     align-items: flex-end;
   }
@@ -209,11 +213,17 @@ img {
   border-radius: 13px;
 }
 
+/* Variables para fuentes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 }
 
-/*Header y nav inicio*/
 .header {
   grid-area: header;
   display: flex;
@@ -232,18 +242,18 @@ img {
     flex-direction: column;
   }
 }
-.menu {
+.header .menu {
   grid-area: nav;
 }
 
-.menu li {
+.header .menu li {
   list-style: none;
   display: inline;
   font-family: "Rubik", monospace;
   padding: 15px 15px 15px 15px;
 }
 
-.menu a {
+.header .menu a {
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -253,20 +263,71 @@ img {
   font-family: "Rubik", sans-serif;
 }
 
-.menu a:hover {
+.header .menu a:hover {
   background-color: #5cc8f2;
   color: white;
   padding: 10px;
 }
 
 @media screen and (max-width: 399px) {
-  .menu {
+  .header .menu {
     flex-direction: row;
     align-items: flex-end;
   }
 }
-opciones {
+/* Media queries */
+/* Variables para categorias */
+.opciones {
   background: linear-gradient(45deg, #131086, #b621f3);
+}
+
+.categ_titl {
+  flex-direction: left;
+  font-family: "Rubik";
+}
+
+.conten_categorias {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "card card card" "card card card" "footer footer footer";
+}
+.conten_categorias .card_cat {
+  background-color: white;
+  border: solid 1px silver;
+  border-radius: 13px;
+  width: 85%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.conten_categorias img {
+  width: 75%;
+  height: 75%;
+  padding: 20px;
+  max-width: 100%;
+}
+.conten_categorias h3 {
+  font-family: "Roboto";
+}
+.conten_categorias a {
+  background-color: steelblue;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+.conten_categorias span {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
 }
 
 .Registro_body {
@@ -503,8 +564,5 @@ footer {
   color: white;
   height: 25px;
 }
-
-/* Variables para fuentes */
-/* Media queries */
 
 /*# sourceMappingURL=Style.css.map */

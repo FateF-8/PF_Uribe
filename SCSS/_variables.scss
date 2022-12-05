@@ -1,8 +1,14 @@
 /* Variables para fuentes */
-$titulos: "Rubik", 20px;
-$textos: "Roboto", 15px;
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap);
+
+$titulos: "Rubik";
+$textos: "Roboto";
 
 /* Media queries */
 $pantalla-m: 768px;
 $pantalla-l: 800px;
 $pantalla-xg: 1200px;
+
+/* Variables para categorias */
+$card-width: 200px;
+$gutter-width: 20px;

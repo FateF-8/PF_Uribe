@@ -1,3 +1,4 @@
+@use "reset";
 @use "navbar";
 @use "variables";
 
@@ -14,10 +15,10 @@
     background-color: white;
     border: solid 1px silver;
     border-radius: 13px;
-    width: 95%;
-    height: 150px;
+    width: 85%;
+    height: 350px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -26,8 +27,10 @@
     width: 100%;
     margin: 0 auto;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 250px 250px;
+    grid-template-rows: auto;
     grid-template-areas: 
     "header header header"
     "card card card"
@@ -36,13 +39,12 @@
 
 .card_cat {
     @include card_cats();
-    grid-area: card;
     }
 
     img {
-    width: 35%;
+    width: 75%;
     height: 75%;
-    padding-left: 20px;
+    padding: 20px;
     max-width: 100%;
     }
 
