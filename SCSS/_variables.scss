@@ -12,3 +12,8 @@ $pantalla-xg: 1200px;
 /* Variables para categorias */
 $card-width: 200px;
 $gutter-width: 20px;
+
+/* Media queries para columnas */
+$s-column: 1fr;
+$m-column: 1fr 1fr;
+$l-column: repeat(3, 1fr);

@@ -9,6 +9,7 @@
 /* Variables para fuentes */
 /* Media queries */
 /* Variables para categorias */
+/* Media queries para columnas */
 img {
   max-width: 100%;
 }
@@ -277,6 +278,7 @@ img {
 }
 /* Media queries */
 /* Variables para categorias */
+/* Media queries para columnas */
 .opciones {
   background: linear-gradient(45deg, #131086, #b621f3);
 }
@@ -328,6 +330,21 @@ img {
   display: flex;
   justify-content: center;
   margin: 15px;
+}
+@media (max-width: 487px) {
+  .conten_categorias {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 488px) and (max-width: 768px) {
+  .conten_categorias {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 769px) {
+  .conten_categorias {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .Registro_body {
