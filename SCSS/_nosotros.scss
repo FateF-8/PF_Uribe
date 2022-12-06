@@ -1,0 +1,29 @@
+.Nosotros-box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nosotros-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nosotros-txt {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nosimg-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .imagen-ilus {
+        display: inline-block;
+        width: 40%;
+        height: 40%;
+        margin: 10px;
+    }
+}
