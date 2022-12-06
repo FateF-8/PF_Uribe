@@ -65,6 +65,10 @@ img {
     align-items: flex-end;
   }
 }
+body {
+  background: linear-gradient(45deg, rgb(0, 70, 131) 34%, rgb(56, 171, 242) 67%);
+}
+
 .grid-container {
   width: 100%;
   margin: 0 auto;
@@ -280,7 +284,7 @@ img {
 /* Variables para categorias */
 /* Media queries para columnas */
 .opciones {
-  background: linear-gradient(45deg, #131086, #b621f3);
+  background: linear-gradient(45deg, rgb(0, 70, 131) 34%, rgb(56, 171, 242) 67%);
 }
 
 .categ_titl {
@@ -296,7 +300,7 @@ img {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "header header header" "card card card" "card card card" "footer footer footer";
+  grid-auto-flow: dense;
 }
 .conten_categorias .card_cat {
   background-color: white;
