@@ -303,7 +303,7 @@ img {
   grid-auto-flow: dense;
 }
 .conten_categorias .card_cat {
-  background-color: white;
+  background-color: #dfe8f1;
   border: solid 1px silver;
   border-radius: 13px;
   width: 85%;
