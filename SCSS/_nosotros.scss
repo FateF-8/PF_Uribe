@@ -6,10 +6,13 @@
 
 .nosotros-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .nosotros-txt {
+        font-family: $textos;
+        font-size: 30px;
         padding: 20px;
         text-align: center;
     }
@@ -22,8 +25,8 @@
 
     .imagen-ilus {
         display: inline-block;
-        width: 40%;
-        height: 40%;
+        width: 50%;
+        height: 50%;
         margin: 10px;
     }
 }
