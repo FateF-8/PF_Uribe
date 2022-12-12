@@ -10,6 +10,7 @@
 /* Media queries */
 /* Variables para categorias */
 /* Media queries para columnas */
+/* Background */
 img {
   max-width: 100%;
 }
@@ -67,7 +68,8 @@ img {
   }
 }
 body {
-  background: linear-gradient(45deg, rgb(0, 70, 131) 34%, rgb(56, 171, 242) 67%);
+  background: rgb(58, 156, 180);
+  background: radial-gradient(circle, rgb(58, 156, 180) 0%, rgb(29, 208, 253) 50%, rgb(69, 225, 252) 100%);
 }
 
 .grid-container {
@@ -316,8 +318,9 @@ img {
 /* Media queries */
 /* Variables para categorias */
 /* Media queries para columnas */
+/* Background */
 .opciones {
-  background: linear-gradient(45deg, rgb(0, 70, 131) 34%, rgb(56, 171, 242) 67%);
+  background: radial-gradient(circle, rgb(58, 156, 180) 0%, rgb(29, 208, 253) 50%, rgb(69, 225, 252) 100%);
 }
 
 .categ_titl {
@@ -417,8 +420,8 @@ img {
 .Registro_body {
   padding: 0;
   margin: 0;
-  background: rgb(0, 70, 131);
-  background: linear-gradient(45deg, rgb(0, 70, 131) 34%, rgb(56, 171, 242) 67%);
+  background: rgb(58, 156, 180);
+  background: radial-gradient(circle, rgb(58, 156, 180) 0%, rgb(29, 208, 253) 50%, rgb(69, 225, 252) 100%);
 }
 
 @media screen and (max-width: 768px) {

@@ -17,3 +17,7 @@ $gutter-width: 20px;
 $s-column: 1fr;
 $m-column: 1fr 1fr;
 $l-column: repeat(3, 1fr);
+
+/* Background */
+$background-color: rgb(58,156,180);
+$background-gradiente: radial-gradient(circle, rgba(58,156,180,1) 0%, rgba(29,208,253,1) 50%, rgba(69,225,252,1) 100%);
