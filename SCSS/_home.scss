@@ -48,9 +48,11 @@ body {
 }
 
 .texto_banner {
-    border: 3px solid black;
+    border: 3px;
     height: 300px;
     width: 500px;
+    font-family: $textos;
+    font-size: 20px;
 }
 /*Banner final*/
 /*Clasificaciones top 6*/
@@ -99,35 +101,35 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
+
 @media screen and (max-width: 767px) {
     .cardtop {
         flex-direction: column;
         width: auto;
     }
 }
-.cardtop img {
+    img {
     width: 35%;
     height: 75%;
     padding-left: 20px;
     max-width: 100%;
-}
+    }
 
-.cardtop h3 {
+    h3 {
     font-family: "Rubik";
-}
-.cardtop a {
-    background-color: transparent;
+    }
+    a {
     color: white;
     text-decoration: none;
     padding: 5px 5px 5px 5px ;
     border-radius: 5px;
-}
-.cardtop span {
+    }
+    span {
     width: 23%;
     display: flex;
     justify-content: center;
     margin: 15px;
+    }
 }
 
 .nombre_cardtop {
@@ -145,12 +147,48 @@ body {
 
 .texto_concards {
     grid-area: textcards;
-    background-color: transparent;
     width: 98%;
     height: 600px;
     padding: 10px;
     font-family: "Roboto";
-    font-size: 20px;
-    border: solid 1px silver;
+    font-size: 30px;
+    border: 1px;
     border-radius: 13px;
+}
+
+.banner_final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-family: $textos;
+        font-size: 25px;
+    }
+
+    img {
+        padding: 30px;
+    }
+}
+
+.Banner_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+        font-family: $textos;
+        font-size: 25px;
+        border: 10px;
+        width: 45%;
+        padding: 5px;
+    }
+
+    iframe {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 5px;
+    }
 }
