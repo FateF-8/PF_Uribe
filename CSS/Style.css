@@ -407,7 +407,7 @@ img {
 .login_container {
   min-height: calc(50vh - 80px);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 30%;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -436,7 +436,7 @@ img {
 .regis_container {
   min-height: calc(45vh - 80px);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 30%;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 50px;
@@ -493,11 +493,9 @@ img {
   width: 450px;
   padding-bottom: 20px;
 }
-
 .titulo_login h1 {
   font-family: "Rubik";
 }
-
 .titulo_login p {
   font-family: "Roboto";
 }
@@ -506,11 +504,9 @@ img {
   width: 450px;
   padding-bottom: 20px;
 }
-
 .titulo_registro h1 {
   font-family: "Rubik";
 }
-
 .titulo_registro p {
   font-family: "Roboto";
 }
@@ -525,15 +521,14 @@ img {
   padding: 10px;
   gap: 50px;
 }
+.login_btn a:hover {
+  background-color: #38abf2;
+}
 
 .contenido_regis {
   display: flex;
   flex-direction: column;
   gap: 18px;
-}
-
-.login_btn a:hover {
-  background-color: #38abf2;
 }
 
 .form_item label:not(.Recordarmecheck) {
@@ -584,7 +579,7 @@ input [type=checkbox] {
   background: linear-gradient(45deg, rgb(0, 70, 131) 0%, rgba(56, 171, 242, 0.6601015406) 57%, rgba(56, 171, 242, 0.6601015406) 99%);
   color: white;
   padding: 1rem;
-  border-radius: 100px;
+  border-radius: 20px;
   text-align: center;
   font-size: 15px;
   height: 25px;

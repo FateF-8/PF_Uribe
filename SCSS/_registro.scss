@@ -23,7 +23,7 @@
 .login_container {
     min-height: calc(50vh - 40px * 2);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30%;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -54,7 +54,7 @@
 .regis_container {
     min-height: calc(45vh - 40px * 2);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30%;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 50px;
@@ -109,23 +109,25 @@
 .titulo_login {
     width: 450px;
     padding-bottom: 20px;
-}
-.titulo_login h1 {
+
+    h1 {
     font-family: "Rubik";
-}
-.titulo_login p {
+    }
+    p {
     font-family: "Roboto";
+    }
 }
 
 .titulo_registro {
     width: 450px;
     padding-bottom: 20px;
-}
-.titulo_registro h1 {
-    font-family: "Rubik";
-}
-.titulo_registro p {
-    font-family: "Roboto";
+
+        h1 {
+        font-family: "Rubik";
+        }
+        p {
+        font-family: "Roboto";
+        }
 }
 
 .contenido_login {
@@ -136,15 +138,15 @@
 .login_btn {
     padding: 10px;
     gap: 50px;
+
+    a:hover {
+        background-color: #38abf2;
+    }
 }
 .contenido_regis {
     display: flex;
     flex-direction: column;
     gap: 18px;
-}
-
-.login_btn a:hover {
-    background-color: #38abf2;
 }
 
 .form_item label:not(.Recordarmecheck) {
@@ -193,7 +195,7 @@ input [type= "checkbox"] {
     background: linear-gradient(45deg, rgba(0,70,131,1) 0%, rgba(56,171,242,0.6601015406162465) 57%, rgba(56,171,242,0.6601015406162465) 99%);
     color: white;
     padding: 1rem;
-    border-radius: 100px;
+    border-radius: 20px;
     text-align: center;
     font-size: 15px;
     height: 25px;
