@@ -159,7 +159,7 @@ body {
   height: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
@@ -169,13 +169,15 @@ body {
   }
 }
 .cardtop img {
-  width: 35%;
+  width: 150px;
   height: 75%;
   padding-left: 20px;
   max-width: 100%;
 }
 .cardtop h3 {
   font-family: "Rubik";
+  justify-content: center;
+  padding: 15px;
 }
 .cardtop a {
   color: white;
