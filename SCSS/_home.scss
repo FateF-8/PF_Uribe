@@ -10,7 +10,6 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 250px auto 700px auto;
     grid-template-areas: 
     "header header header header"
     "banner banner banner banner"
@@ -41,7 +40,7 @@ body {
     border: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 892px) {
     .img_banner {
         flex-direction: column;
         width: auto;
@@ -85,11 +84,23 @@ body {
     justify-content: space-around;
     align-items: center;    
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 892px) {
     .conten_topcar {
         flex-direction: column;
         width: auto;
     }
+    
+    .clasif {
+        grid-area: clasif;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "top"
+        "cards" 
+        "textcards";
+        }
+    
 }
 
 .cardtop {

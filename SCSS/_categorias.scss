@@ -32,6 +32,7 @@
     grid-template-columns: $l-column;
     grid-template-rows: auto;
     grid-auto-flow: dense;
+    gap: 18px;
 
 .card_cat {
     @include card_cats();

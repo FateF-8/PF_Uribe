@@ -68,8 +68,8 @@ img {
   }
 }
 body {
-  background: rgb(58, 156, 180);
-  background: radial-gradient(circle, rgb(58, 156, 180) 0%, rgb(29, 208, 253) 50%, rgb(69, 225, 252) 100%);
+  background: rgb(11, 107, 191);
+  background: linear-gradient(90deg, rgb(11, 107, 191) 0%, rgb(223, 232, 241) 49%, rgb(56, 171, 242) 100%);
 }
 
 .grid-container {
@@ -77,7 +77,6 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 250px auto 700px auto;
   grid-template-areas: "header header header header" "banner banner banner banner" "clasif clasif clasif clasif" "footer footer footer footer";
 }
 
@@ -104,7 +103,7 @@ body {
   border: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 892px) {
   .img_banner {
     flex-direction: column;
     width: auto;
@@ -147,10 +146,17 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 892px) {
   .conten_topcar {
     flex-direction: column;
     width: auto;
+  }
+  .clasif {
+    grid-area: clasif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "top" "cards" "textcards";
   }
 }
 .cardtop {
@@ -320,7 +326,7 @@ img {
 /* Media queries para columnas */
 /* Background */
 .opciones {
-  background: radial-gradient(circle, rgb(58, 156, 180) 0%, rgb(29, 208, 253) 50%, rgb(69, 225, 252) 100%);
+  background: linear-gradient(90deg, rgb(11, 107, 191) 0%, rgb(223, 232, 241) 49%, rgb(56, 171, 242) 100%);
 }
 
 .categ_titl {
@@ -337,6 +343,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-auto-flow: dense;
+  gap: 18px;
 }
 .conten_categorias .card_cat {
   background-color: #dfe8f1;
@@ -409,6 +416,9 @@ img {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
 }
 .nosotros-container .imagen-ilus {
   display: inline-block;
@@ -420,8 +430,8 @@ img {
 .Registro_body {
   padding: 0;
   margin: 0;
-  background: rgb(58, 156, 180);
-  background: radial-gradient(circle, rgb(58, 156, 180) 0%, rgb(29, 208, 253) 50%, rgb(69, 225, 252) 100%);
+  background: rgb(11, 107, 191);
+  background: linear-gradient(90deg, rgb(11, 107, 191) 0%, rgb(223, 232, 241) 49%, rgb(56, 171, 242) 100%);
 }
 
 @media screen and (max-width: 768px) {
@@ -623,16 +633,15 @@ input [type=checkbox] {
 .wrapper {
   grid-area: footer;
   margin: 0 10px 0 10px;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .contenido__inicio {
-  flex-grow: 1;
+  flex-grow: 20;
   text-align: center;
   justify-content: center;
-  font-family: "Roboto";
+  font-family: "Rubik";
 }
 
 .Banner_footer {
@@ -644,6 +653,7 @@ footer {
   background-color: #0b6bbf;
   color: white;
   height: 25px;
+  font-family: "Rubik";
 }
 
 /*# sourceMappingURL=Style.css.map */
