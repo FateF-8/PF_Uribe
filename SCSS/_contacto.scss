@@ -1,0 +1,22 @@
+.form_contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contacto_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    h1 {
+        font-family: $titulos;
+    }
+
+    .btn_enviar {
+        border: none;
+        background: rgb(0,70,131);
+        background: linear-gradient(45deg, rgba(0,70,131,1) 0%, rgba(56,171,242,0.6601015406162465) 57%, rgba(56,171,242,0.6601015406162465) 99%);
+    }
+}
+

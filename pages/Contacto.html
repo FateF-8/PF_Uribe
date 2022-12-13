@@ -25,10 +25,10 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="contacto_flex">
         <h1 class="Titulo__contacto">¿Quieres contactarte con nosotros?</h1>
-        <fieldset>
-        <form method="post" class="Formulario__contacto">
+        <div class="form_contenedor">
+        <form method="post" class="formulario__contacto">
             <label for="Contacto">Contáctanos</label>
             <input type="text" id="Nombre" name="Nombre" required>
             <label for="Apellido">Apellido</label>
@@ -39,9 +39,9 @@
             <input type="text" id="Titulo" name="Titulo" required>
             <label for="Mensaje">Mensaje</label>
             <textarea name="Mensaje" id="Mensaje" cols="50" rows="10"></textarea>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="btn_enviar">
         </form>
-        </fieldset>
+        </div>
     </section>
     <section class="wrapper">
         <footer>

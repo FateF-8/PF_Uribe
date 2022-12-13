@@ -114,7 +114,7 @@ body {
   height: 300px;
   width: 500px;
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /*Banner final*/
@@ -430,6 +430,26 @@ img {
   width: 50%;
   height: 50%;
   margin: 10px;
+}
+
+.form_contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contacto_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.contacto_flex h1 {
+  font-family: "Rubik";
+}
+.contacto_flex .btn_enviar {
+  border: none;
+  background: rgb(0, 70, 131);
+  background: linear-gradient(45deg, rgb(0, 70, 131) 0%, rgba(56, 171, 242, 0.6601015406) 57%, rgba(56, 171, 242, 0.6601015406) 99%);
 }
 
 .Registro_body {
