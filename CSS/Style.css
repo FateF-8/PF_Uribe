@@ -169,6 +169,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 @media screen and (max-width: 767px) {
   .cardtop .cardtop {
@@ -184,27 +185,31 @@ body {
 }
 .cardtop h3 {
   font-family: "Rubik";
-  justify-content: center;
+  justify-content: right;
   padding: 15px;
 }
 .cardtop a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 5px 5px 5px 5px;
   border-radius: 5px;
+  background-color: steelblue;
+  font-family: "Rubik";
 }
 .cardtop span {
-  width: 23%;
+  width: 30%;
   display: flex;
   justify-content: center;
-  margin: 15px;
+  margin: 20px;
 }
 
 .nombre_cardtop {
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  justify-content: left;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 
 .descripcion_cardtop {
