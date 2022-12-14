@@ -15,6 +15,13 @@ body {
     "banner banner banner banner"
     "clasif clasif clasif clasif"
     "footer footer footer footer";
+
+    @media screen and (max-width: 645px) {
+        .grid-container {
+            flex-direction: column;
+            width: auto;
+        }
+    }
 }
 
 /*Header y nav final*/

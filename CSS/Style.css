@@ -79,6 +79,12 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "header header header header" "banner banner banner banner" "clasif clasif clasif clasif" "footer footer footer footer";
 }
+@media screen and (max-width: 645px) {
+  .grid-container .grid-container {
+    flex-direction: column;
+    width: auto;
+  }
+}
 
 /*Header y nav final*/
 /*Banner inicio*/
