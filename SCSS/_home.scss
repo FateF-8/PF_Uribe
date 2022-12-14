@@ -95,6 +95,15 @@ body {
     .conten_topcar {
         flex-direction: column;
         width: auto;
+
+        .grid-container {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "header"
+            "banner"
+            "clasif"
+            "footer";
+        }
     }
     
     .clasif {
@@ -131,6 +140,7 @@ body {
 
 @media screen and (max-width: 645px) {
     .cardtop {
+        display: flex;
         flex-direction: column;
         width: auto;
     }
