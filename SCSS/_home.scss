@@ -95,15 +95,6 @@ body {
     .conten_topcar {
         flex-direction: column;
         width: auto;
-
-        .grid-container {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "header"
-            "banner"
-            "clasif"
-            "footer";
-        }
     }
     
     .clasif {
@@ -143,6 +134,17 @@ body {
         display: flex;
         flex-direction: column;
         width: auto;
+    }
+    .conten_topcar {
+        flex-direction: column;
+    }  
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "banner"
+        "clasif"
+        "footer";
     }
 }
 

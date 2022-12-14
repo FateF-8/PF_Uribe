@@ -157,10 +157,6 @@ body {
     flex-direction: column;
     width: auto;
   }
-  .conten_topcar .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "banner" "clasif" "footer";
-  }
   .clasif {
     grid-area: clasif;
     display: grid;
@@ -192,6 +188,13 @@ body {
     display: flex;
     flex-direction: column;
     width: auto;
+  }
+  .cardtop .conten_topcar {
+    flex-direction: column;
+  }
+  .cardtop .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "banner" "clasif" "footer";
   }
 }
 .cardtop img {
