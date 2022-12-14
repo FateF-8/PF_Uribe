@@ -121,6 +121,14 @@ body {
         width: auto;
     }
 }
+
+@media screen and (max-width: 645px) {
+    .cardtop {
+        flex-direction: column;
+        width: auto;
+    }
+}
+
     img {
     width: 150px;
     height: 75%;
